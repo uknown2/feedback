@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>FEEDBACK FORM</h1>
+    <hr>
+    <form action="" class="feedbackform" id="feed-form">
+            <table class="personalinformation">
+                <tr>
+                    <td>Name :</td>
+                    <td><input type="text" id="username" name="username" placeholder="Enter your full name" required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Email :</td>
+                    <td><input type="email" id="useremailid" name="emailid" placeholder="Enter you email ID " required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Phone Number :</td>
+                    <td><input type="tel" name="phone" id="userphonenumber" placeholder="Enter you phone number"
+                            required>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Gender :</td>
+                    <td id="gendertd">
+                        <input type="radio" name="Gender" value="Male" id="exampleInputGender" />
+                        Male
+                        <input type="radio" name="Gender" value="Female" id="exampleInputGender" />
+                        Female
+                        <input type="radio" name="Gender" value="Other" id="exampleInputGender" />
+                        Other
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="address">Address :</label></td>
+                    <td><textarea name="address1" id="useraddress" cols="30" rows="6"
+                            placeholder="Enter your address "></textarea></td>
+                </tr>
+            
+                <tr>
+                    <td><label for="address">Write your feedback :</label></td>
+                    <td><textarea name="feedback" id="userfeedback" cols="40" rows="12"
+                        placeholder="Enter your detail feedback here"></textarea></td>
+                </tr>
+            </table>
+
+
+        <div class="div1">
+            <table>
+                <tr>
+                    <td>
+                        <button type="button" class="preview" onclick="preview()"> Pre-view</button>
+                    </td>
+                    <td>
+                        <button type="submit" class="submit" onclick="submits()"> Submit</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </form>
+
+    <script src="function.js"></script>
+</body>
+
+</html>
